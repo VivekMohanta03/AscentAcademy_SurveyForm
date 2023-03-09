@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+</head>
+
+<body>
+    <form action="" name="myform" class="container" onsubmit="return(validate());">
+        <h1 class="title">Survey Form</h1>
+        <div class="form-field">
+            <label for="fname">First Name <span class="star">*</span></label>
+            <input type="text" name="fname" id="fname" placeholder="First name" autocomplete="off" required>
+            <div class="alert" id="alert" style="margin:0px"></div>
+        </div>
+        <div class="form-field">
+            <label for="lname">Last Name <spam class="star">*</spam></label>
+            <input type="text" name="lname" id="lastname" placeholder="Last name" autocomplete="off" required>
+        </div>
+        <div class="form-field">
+            <div class="alert" id="alert" style="margin:0px"></div>
+            <label for="email">Email <span class="star">*</span></label>
+        </div>
+        <div class="form-field">
+            <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" required>
+            <div class="alert" id="alert" style="margin:0px"></div>
+        </div>
+        <div class="form-field">
+            <label for="number">Contact Number <span class="star">*</span></label>
+            <input type="textNumber" name="number" id="number" placeholder="Number" autocomplete="off" required>
+            <div class="alert" id="alert" style="margin:0px"></div>
+        </div>
+        <div class="form-field">
+            <label for="student">Are you a student?</label>
+            <div class="radio">
+                <input type="radio" name="student" id="1">Yes
+            </div>
+            <div class="radio2">
+                <input type="radio" name="student" id="2">No
+            </div>
+        </div>
+        <label for="InterestedDomain">Interested Domain</label>
+        <div class="checkbox">
+            <p><input type="checkbox">Web development</p>
+            <p><input type="checkbox">App development</p>
+            <p><input type="checkbox">AI/ML</p>
+            <p><input type="checkbox">Cyber Security</p>
+        </div>
+        <label for="where">Where did you find us?</label>
+        <select name="dropdown" id="" class="dropdown">
+            <option value="0">--Select--</option>
+            <option value="1">LinkedIn</option>
+            <option value="2">Whatsapp</option>
+            <option value="3">Instagram</option>
+            <option value="4">Facebook</option>
+            <option value="5">Github</option>
+            <option value="6">Other</option>
+        </select>
+        <label for="feedback">What did you like about us?</label>
+        <textarea name="textarea" id="4" cols="10" rows="7"></textarea>
+        <button type="submit" id="submit"><a href="thank.html">Submit</a></button>
+    </form>
+    </div>
+    
+</body>
+
+</html>
